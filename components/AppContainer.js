@@ -45,7 +45,6 @@ const Appcontainer = ({ children }) => {
 					{/* links */}
 						<Group position='right'>
 							<Anchor href='/about'>About</Anchor>
-							<Anchor href='/prices'>Prices</Anchor>
 						</Group>
 
 					{/* menu */}
