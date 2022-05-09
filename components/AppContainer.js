@@ -67,7 +67,7 @@ const Appcontainer = ({ children }) => {
 					</Drawer> */}
 
 					<MediaQuery
-						query='(min-width:10px)'
+						query='(min-width:5px)'
 						styles={{ display: 'none' }}
 					>
 						<ActionIcon >

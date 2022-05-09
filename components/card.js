@@ -40,6 +40,8 @@ export default function Demo() {
 					color='blue'
 					style={{ marginTop: 14 }}
 					fullWidth
+					component='a'
+					href='/details'
 				>
 					View Details
 				</Button>
