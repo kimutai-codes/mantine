@@ -40,14 +40,19 @@ export default function Demo() {
 					style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
 				>
 					<Text weight={800} style={{ textAlign: 'center' }}>
-						Name of service
+						Blog Development
 					</Text>
-					<Badge variant='dot' color='red'>
-						26% off
+					<Badge
+						variant='gradient'
+						gradient={{ from: '', to: '#F783AC' }}
+					>
+						Ksh 35,786
 					</Badge>
+					<Text size='md' style={{ lineHeight: 1.5 }}>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Praesentium, a? Voluptas quo illo alias doloremque
+					</Text>
 				</Group>
-
-				<Text size='md' style={{ lineHeight: 1.5 }}></Text>
 
 				<Card.Section
 					style={{
