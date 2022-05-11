@@ -9,7 +9,7 @@ import {
 	useMantineTheme,
 	Center,
 } from '@mantine/core';
-import { Dashboard, Mail, Video } from 'tabler-icons-react';
+import { Check, Dashboard, Database, Mail, Video } from 'tabler-icons-react';
 import Demo from '../components/card';
 
 export default function Home() {
@@ -18,7 +18,8 @@ export default function Home() {
 		{
 			serviceName: 'Blog Development',
 			price: 'Ksh 35,000',
-			description: 'Lorem ipsum tings',
+			description:
+				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
 				{ label: 'Netlify CMS', icon: Dashboard },
 				{ label: 'Free hosting', icon: Dashboard },
@@ -30,7 +31,8 @@ export default function Home() {
 		{
 			serviceName: 'E-Commerce',
 			price: 'Ksh 90,000',
-			description: 'descriptioniiii',
+			description:
+				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
 				{ label: 'Netlify CMS', icon: Dashboard },
 				{ label: 'Free hosting', icon: Dashboard },
@@ -42,7 +44,8 @@ export default function Home() {
 		{
 			serviceName: 'Bot-Development',
 			price: 'Ksh 345,000',
-			description: 'descriptioniiii',
+			description:
+				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
 				{ label: 'Netlify CMS', icon: Dashboard },
 				{ label: 'Free hosting', icon: Dashboard },
@@ -54,7 +57,8 @@ export default function Home() {
 		{
 			serviceName: 'Custom',
 			price: 'Discuss',
-			description: 'descriptioniiii',
+			description:
+				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
 				{ label: 'Netlify CMS', icon: Dashboard },
 				{ label: 'Free hosting', icon: Dashboard },
@@ -112,15 +116,15 @@ export default function Home() {
 							style={{
 								borderTop: '1px solid #CED4DA',
 								marginTop: '15px',
-								padding: '10px 0',
+								padding: '10px 8px',
 								borderBottom: '1px solid #CED4DA',
 							}}
 						>
 							<Group>
 								{item.features.map((feature) => (
 									<Center key={feature.label}>
-										<feature.icon size={18} />
-										<Text size='xs'>{feature.label}</Text>
+										<Check size={18} color='#20C997'/>
+										<Text size='sm'>{feature.label}</Text>
 									</Center>
 								))}
 							</Group>
