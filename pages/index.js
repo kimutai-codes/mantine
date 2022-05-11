@@ -69,93 +69,94 @@ export default function Home() {
 		<Grid grow gutter='xs'>
 			{data.map((item) => (
 				<Grid.Col key={item.serviceName} span={4}>
-					<div style={{ width: 340, margin: 'auto', marginBottom: '2em' }}>
-						<Card shadow='sm' p='lg'>
-							<Card.Section>
-								{/* TODO image link */}
-								<Image
-									src='./norway.png'
-									height={160}
-									alt='Norway'
-								/>
-							</Card.Section>
+					<Card
+						shadow='sm'
+						p='lg'
+						style={{
+							maxWidth: 340,
+							margin: 'auto',
+							marginBottom: '2em',
+						}}
+					>
+						<Card.Section>
+							{/* TODO image link */}
+							<Image
+								src='./norway.png'
+								height={160}
+								alt='Norway'
+							/>
+						</Card.Section>
 
-							<Group
-								position='apart'
-								style={{
-									marginBottom: 5,
-									marginTop: theme.spacing.sm,
-								}}
+						<Group
+							position='apart'
+							style={{
+								marginBottom: 5,
+								marginTop: theme.spacing.sm,
+							}}
+						>
+							<Text weight={800} style={{ textAlign: 'center' }}>
+								{item.serviceName}
+							</Text>
+							<Badge
+								variant='gradient'
+								gradient={{ from: '', to: '#F783AC' }}
 							>
-								<Text
-									weight={800}
-									style={{ textAlign: 'center' }}
-								>
-									{item.serviceName}
-								</Text>
-								<Badge
-									variant='gradient'
-									gradient={{ from: '', to: '#F783AC' }}
-								>
-									{item.price}
-								</Badge>
-								<Text size='md' style={{ lineHeight: 1.5 }}>
-									{item.description}
-								</Text>
-							</Group>
+								{item.price}
+							</Badge>
+							<Text size='md' style={{ lineHeight: 1.5 }}>
+								{item.description}
+							</Text>
+						</Group>
 
-							<Card.Section
-								style={{
-									borderTop: '1px solid #CED4DA',
-									marginTop: '15px',
-									padding: '10px 0',
-									borderBottom: '1px solid #CED4DA',
-								}}
-							>
-								<Group>
-									{item.features.map((feature) => (
-										<Center key={feature.label}>
-											<feature.icon size={18} />
-											<Text size='xs'>
-												{feature.label}
-											</Text>
-										</Center>
-									))}
-								</Group>
-							</Card.Section>
-							<Group style={{ padding: '14px 0' }}>
-								<Button
-									color='lime'
-									variant='gradient'
-									gradient={{
-										from: '#66D9E8',
-										to: 'teal',
-										deg: 60,
-									}}
-									fullWidth
-									component='a'
-									href='#'
-									leftIcon={<Mail color='#FF8787' />}
-								>
-									<Group>Inquire via email</Group>
-								</Button>
-								<Button
-									variant='gradient'
-									gradient={{
-										from: '#63E6BE',
-										to: '#74C0FC',
-										deg: 60,
-									}}
-									fullWidth
-									component='a'
-									href='#'
-									leftIcon={<Video color='#4DABF7' />}
-								>
-									<Group>Book zoom call</Group>
-								</Button>
+						<Card.Section
+							style={{
+								borderTop: '1px solid #CED4DA',
+								marginTop: '15px',
+								padding: '10px 0',
+								borderBottom: '1px solid #CED4DA',
+							}}
+						>
+							<Group>
+								{item.features.map((feature) => (
+									<Center key={feature.label}>
+										<feature.icon size={18} />
+										<Text size='xs'>{feature.label}</Text>
+									</Center>
+								))}
 							</Group>
-						</Card>
-					</div>
+						</Card.Section>
+						<Group style={{ padding: '14px 0' }}>
+							<Button
+								color='lime'
+								variant='gradient'
+								gradient={{
+									from: '#66D9E8',
+									to: 'teal',
+									deg: 60,
+								}}
+								fullWidth
+								component='a'
+								href='#'
+								leftIcon={<Mail color='#FF8787' />}
+							>
+								<Group>Inquire via email</Group>
+							</Button>
+							<Button
+								variant='gradient'
+								gradient={{
+									from: '#63E6BE',
+									to: '#74C0FC',
+									deg: 60,
+								}}
+								fullWidth
+								component='a'
+								href='#'
+								leftIcon={<Video color='#4DABF7' />}
+							>
+								<Group>Book zoom call</Group>
+							</Button>
+						</Group>
+					</Card>
 				</Grid.Col>
 			))}
 		</Grid>
