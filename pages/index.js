@@ -21,11 +21,11 @@ export default function Home() {
 			description:
 				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
-				{ label: 'Netlify CMS', icon: Dashboard },
-				{ label: 'Free hosting', icon: Dashboard },
-				{ label: 'Fast Pages', icon: Dashboard },
-				{ label: 'Working Blog', icon: Dashboard },
-				{ label: 'Mobile Responsiveness', icon: Dashboard },
+				{ label: 'Netlify CMS' },
+				{ label: 'Free hosting' },
+				{ label: 'Fast Pages' },
+				{ label: 'Working Blog' },
+				{ label: 'Mobile Responsiveness' },
 			],
 		},
 		{
@@ -34,11 +34,11 @@ export default function Home() {
 			description:
 				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
-				{ label: 'Netlify CMS', icon: Dashboard },
-				{ label: 'Free hosting', icon: Dashboard },
-				{ label: 'Fast Pages', icon: Dashboard },
-				{ label: 'Working Blog', icon: Dashboard },
-				{ label: 'Mobile Responsiveness', icon: Dashboard },
+				{ label: 'Netlify CMS' },
+				{ label: 'Free hosting' },
+				{ label: 'Fast Pages' },
+				{ label: 'Working Blog' },
+				{ label: 'Mobile Responsiveness' },
 			],
 		},
 		{
@@ -47,11 +47,11 @@ export default function Home() {
 			description:
 				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
-				{ label: 'Netlify CMS', icon: Dashboard },
-				{ label: 'Free hosting', icon: Dashboard },
-				{ label: 'Fast Pages', icon: Dashboard },
-				{ label: 'Working Blog', icon: Dashboard },
-				{ label: 'Mobile Responsiveness', icon: Dashboard },
+				{ label: 'Netlify CMS' },
+				{ label: 'Free hosting' },
+				{ label: 'Fast Pages' },
+				{ label: 'Working Blog' },
+				{ label: 'Mobile Responsiveness' },
 			],
 		},
 		{
@@ -60,11 +60,11 @@ export default function Home() {
 			description:
 				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente natus nam, est voluptates magni sint nobis mollitia.',
 			features: [
-				{ label: 'Netlify CMS', icon: Dashboard },
-				{ label: 'Free hosting', icon: Dashboard },
-				{ label: 'Fast Pages', icon: Dashboard },
-				{ label: 'Working Blog', icon: Dashboard },
-				{ label: 'Mobile Responsiveness', icon: Dashboard },
+				{ label: 'Netlify CMS' },
+				{ label: 'Free hosting' },
+				{ label: 'Fast Pages' },
+				{ label: 'Working Blog' },
+				{ label: 'Mobile Responsiveness' },
 			],
 		},
 	];
@@ -123,7 +123,7 @@ export default function Home() {
 							<Group>
 								{item.features.map((feature) => (
 									<Center key={feature.label}>
-										<Check size={18} color='#20C997'/>
+										<Check size={18} color='#20C997' />
 										<Text size='sm'>{feature.label}</Text>
 									</Center>
 								))}
