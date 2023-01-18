@@ -13,8 +13,6 @@ import { client } from '../utils/apolloClient';
 import { gql } from '@apollo/client';
 
 export default function Catalogue({ workWithMes }) {
-	console.log(workWithMes);
-
 	return (
 		<>
 			<h1>Work with me</h1>
@@ -22,7 +20,7 @@ export default function Catalogue({ workWithMes }) {
 				{workWithMes.map((item) => (
 					<Grid.Col key={item.title} span={4}>
 						<Card
-							shadow='sm'
+							shadow='lg'
 							p='lg'
 							style={{
 								maxWidth: 340,
@@ -30,15 +28,6 @@ export default function Catalogue({ workWithMes }) {
 								marginBottom: '2em',
 							}}
 						>
-							<Card.Section>
-								{/* TODO image link */}
-								<Image
-									src='./norway.png'
-									height={160}
-									alt='Norway'
-								/>
-							</Card.Section>
-
 							<Group
 								position='apart'
 								style={{
