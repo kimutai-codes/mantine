@@ -10,7 +10,7 @@ import {
 	MediaQuery,
 	Menu,
 	Text,
-  Button,
+	Button,
 } from '@mantine/core';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -41,39 +41,41 @@ const Appcontainer = ({ children }) => {
 							<Home />
 						</ActionIcon>
 					</Link>
-
 					{/* links */}
-						<Group position='right'>
-							<Anchor href='/about'>About</Anchor>
-						</Group>
-
-					{/* menu */}
-					{/* I love this media query..the way it stays in contexts */}
+					<Group position='right'>
+						<Anchor href='/blog'>Blog</Anchor>
+						<Anchor href='/projects'>Projects</Anchor>
+						{/* //style this one to be attention grabbing */}
+						<Anchor href='/catalogue'>Catalogue</Anchor>
+						<Anchor href='/links'>Links</Anchor>
+					</Group>
+					{/* menu I love this media query..the way it stays in contexts */}
 					{/* <Drawer
-						opened={opened}
-						onClose={() => setOpened(false)}
+						// opened={opened}
+						// onClose={() => setOpened(false)}
 						padding='xl'
 						size='sm'
 						position='top'
 					>
-						<ul styles={{style:"none"}}>
+						<ul styles={{ style: 'none' }}>
 							<li>
-								<a href='/about'>About</a>
+								<Link href='/about'>
+									<a>About</a>
+								</Link>
 							</li>
 							<li>
 								<a href='/prices'>Prices</a>
 							</li>
 						</ul>
-					</Drawer> */}
-
+					</Drawer>
 					<MediaQuery
 						query='(min-width:5px)'
 						styles={{ display: 'none' }}
 					>
-						<ActionIcon >
+						<ActionIcon>
 							<Menu2 />
 						</ActionIcon>
-					</MediaQuery>
+					</MediaQuery> */}
 				</Header>
 			}
 		>
