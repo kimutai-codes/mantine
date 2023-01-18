@@ -56,7 +56,7 @@ export default function Catalogue({ workWithMes }) {
 									variant='gradient'
 									gradient={{ from: '', to: '#F783AC' }}
 								>
-									{item.price}
+									KES {item.price}
 								</Badge>
 								<Text size='md' style={{ lineHeight: 1.5 }}>
 									{item.description.text}
